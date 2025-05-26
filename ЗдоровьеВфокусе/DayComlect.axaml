@@ -1,0 +1,155 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"  MinWidth="500" MinHeight="600" Width="500" Height="700" WindowState="FullScreen" MaxHeight="700" MaxWidth="500"
+        x:Class="ЗдоровьеВфокусе.DayComlect"
+        Title="DayComlect">
+	<Grid ShowGridLines="False">
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition></ColumnDefinition>
+			<ColumnDefinition></ColumnDefinition>
+		</Grid.ColumnDefinitions>
+		<Grid.RowDefinitions>
+			<RowDefinition Height="*"></RowDefinition>
+			<RowDefinition Height="*"></RowDefinition>
+			<RowDefinition Height="*"></RowDefinition>
+			<RowDefinition Height="*"></RowDefinition>
+		</Grid.RowDefinitions>
+		<StackPanel Grid.ColumnSpan="2" VerticalAlignment="Center" HorizontalAlignment="Center">
+			<TextBlock Text="Ваш тренировочный план" FontSize="30"></TextBlock>
+		</StackPanel>
+		<StackPanel Grid.ColumnSpan="2" Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Center">
+			<Border CornerRadius="30" Background="GhostWhite" Width="450" Height="150">	
+					<StackPanel Orientation="Horizontal">
+						<Border BorderBrush="Black" BorderThickness="3" Margin="20,0,20,50" x:Name="Bordername1" Width="40" Height="40"  Background="White" CornerRadius="30">
+							<TextBlock TextAlignment="Center" VerticalAlignment="Center" FontSize="30" Text="1"></TextBlock>
+						</Border>
+						<Border BorderBrush="Black" BorderThickness="3" Margin="10,0,0,50" x:Name="Bordername2" Width="40" Height="40"  Background="White" CornerRadius="30">
+							<TextBlock TextAlignment="Center" VerticalAlignment="Center" FontSize="30" Text="2"></TextBlock>
+						</Border>
+						<Border BorderBrush="Black" BorderThickness="3" Margin="20,0,0,50" x:Name="Bordername3" Width="40" Height="40"  Background="White" CornerRadius="30">
+							<TextBlock TextAlignment="Center" VerticalAlignment="Center" FontSize="30" Text="3"></TextBlock>
+						</Border>
+						<Border BorderBrush="Black" BorderThickness="3"  Margin="20,0,0,50" x:Name="Bordername4" Width="40" Height="40"  Background="White" CornerRadius="30">
+							<TextBlock TextAlignment="Center" VerticalAlignment="Center" FontSize="30" Text="4"></TextBlock>
+						</Border>
+						<Border BorderBrush="Black" BorderThickness="3" Margin="20,0,0,50" x:Name="Bordername5" Width="40" Height="40"  Background="White" CornerRadius="30">
+							<TextBlock TextAlignment="Center" VerticalAlignment="Center" FontSize="30" Text="5"></TextBlock>
+						</Border>
+						<Border BorderBrush="Black" BorderThickness="3" Margin="20,0,0,50" x:Name="Bordername6" Width="40" Height="40"  Background="White" CornerRadius="30">
+							<TextBlock TextAlignment="Center" VerticalAlignment="Center" FontSize="30" Text="6"></TextBlock>
+						</Border>
+						<Border BorderBrush="Black" BorderThickness="3" Margin="20,0,0,50" x:Name="Bordername7" Width="40" Height="40"  Background="White" CornerRadius="30">
+							<TextBlock TextAlignment="Center" VerticalAlignment="Center" FontSize="30" Text="7"></TextBlock>
+						</Border>
+						
+					</StackPanel>
+			</Border>
+		</StackPanel>
+		<StackPanel Grid.ColumnSpan="2" Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Center">	
+				<StackPanel Orientation="Horizontal">
+						<Border BorderBrush="Black" BorderThickness="3" Margin="5,80,20,0" x:Name="Bordername8" Width="40" Height="40"  Background="White" CornerRadius="30">
+							<TextBlock TextAlignment="Center" VerticalAlignment="Center" FontSize="30" Text="8"></TextBlock>
+						</Border>
+						<Border BorderBrush="Black" BorderThickness="3" Margin="10,80,0,0" x:Name="Bordername9" Width="40" Height="40"  Background="White" CornerRadius="30">
+							<TextBlock TextAlignment="Center" VerticalAlignment="Center" FontSize="30" Text="9"></TextBlock>
+						</Border>
+						<Border BorderBrush="Black" BorderThickness="3" Margin="20,80,0,0" x:Name="Bordername10" Width="40" Height="40"  Background="White" CornerRadius="30">
+							<TextBlock TextAlignment="Center" VerticalAlignment="Center" FontSize="30" Text="10"></TextBlock>
+						</Border>
+						<Border BorderBrush="Black" BorderThickness="3" Margin="20,80,0,0" x:Name="Bordername11" Width="40" Height="40"  Background="White" CornerRadius="30">
+							<TextBlock TextAlignment="Center" VerticalAlignment="Center" FontSize="30" Text="11"></TextBlock>
+						</Border>
+						<Border BorderBrush="Black" BorderThickness="3" Margin="20,80,0,0" x:Name="Bordername12" Width="40" Height="40"  Background="White" CornerRadius="30">
+							<TextBlock TextAlignment="Center" VerticalAlignment="Center" FontSize="30" Text="12"></TextBlock>
+						</Border>
+						<Border BorderBrush="Black" BorderThickness="3" Margin="20,80,0,0" x:Name="Bordername13" Width="40" Height="40"  Background="White" CornerRadius="30">
+							<TextBlock TextAlignment="Center" VerticalAlignment="Center" FontSize="30" Text="13"></TextBlock>
+						</Border>
+						<Border BorderBrush="Black" BorderThickness="3" Margin="20,80,0,0" x:Name="Bordername14" Width="40" Height="40"  Background="White" CornerRadius="30">
+							<TextBlock TextAlignment="Center" VerticalAlignment="Center" FontSize="30" Text="14"></TextBlock>
+						</Border>
+					</StackPanel>
+		</StackPanel>
+		<StackPanel Grid.ColumnSpan="2" Grid.Row="2" VerticalAlignment="Center" HorizontalAlignment="Center">
+			<Border CornerRadius="30" Background="GhostWhite" Width="450" Height="150">
+				<StackPanel Orientation="Horizontal">
+					<Border BorderBrush="Black" BorderThickness="3" Margin="20,0,20,50" x:Name="Bordername15" Width="40" Height="40"  Background="White" CornerRadius="30">
+						<TextBlock TextAlignment="Center" VerticalAlignment="Center" FontSize="30" Text="15"></TextBlock>
+					</Border>
+					<Border BorderBrush="Black" BorderThickness="3" Margin="10,0,0,50" x:Name="Bordername16" Width="40" Height="40"  Background="White" CornerRadius="30">
+						<TextBlock TextAlignment="Center" VerticalAlignment="Center" FontSize="30" Text="16"></TextBlock>
+					</Border>
+					<Border BorderBrush="Black" BorderThickness="3" Margin="20,0,0,50" x:Name="Bordername17" Width="40" Height="40"  Background="White" CornerRadius="30">
+						<TextBlock TextAlignment="Center" VerticalAlignment="Center" FontSize="30" Text="17"></TextBlock>
+					</Border>
+					<Border BorderBrush="Black" BorderThickness="3" Margin="20,0,0,50" x:Name="Bordername18" Width="40" Height="40"  Background="White" CornerRadius="30">
+						<TextBlock TextAlignment="Center" VerticalAlignment="Center" FontSize="30" Text="18"></TextBlock>
+					</Border>
+					<Border BorderBrush="Black" BorderThickness="3" Margin="20,0,0,50" x:Name="Bordername19" Width="40" Height="40"  Background="White" CornerRadius="30">
+						<TextBlock TextAlignment="Center" VerticalAlignment="Center" FontSize="30" Text="19"></TextBlock>
+					</Border>
+					<Border BorderBrush="Black" BorderThickness="3" Margin="20,0,0,50" x:Name="Bordername20" Width="40" Height="40"  Background="White" CornerRadius="30">
+						<TextBlock TextAlignment="Center" VerticalAlignment="Center" FontSize="30" Text="20"></TextBlock>
+					</Border>
+					<Border BorderBrush="Black" BorderThickness="3" Margin="20,0,0,50" x:Name="Bordername21" Width="40" Height="40"  Background="White" CornerRadius="30">
+						<TextBlock TextAlignment="Center" VerticalAlignment="Center" FontSize="30" Text="21"></TextBlock>
+					</Border>
+
+				</StackPanel>
+			</Border>
+		</StackPanel>
+		<StackPanel Grid.ColumnSpan="2" Grid.Row="2" VerticalAlignment="Center" HorizontalAlignment="Center">
+			<StackPanel Orientation="Horizontal">
+				<Border BorderBrush="Black" BorderThickness="3" Margin="5,80,20,0" x:Name="Bordername22" Width="40" Height="40"  Background="White" CornerRadius="30">
+					<TextBlock TextAlignment="Center" VerticalAlignment="Center" FontSize="30" Text="22"></TextBlock>
+				</Border>
+				<Border BorderBrush="Black" BorderThickness="3" Margin="10,80,0,0" x:Name="Bordername23" Width="40" Height="40"  Background="White" CornerRadius="30">
+					<TextBlock TextAlignment="Center" VerticalAlignment="Center" FontSize="30" Text="23"></TextBlock>
+				</Border>
+				<Border BorderBrush="Black" BorderThickness="3" Margin="20,80,0,0" x:Name="Bordername24" Width="40" Height="40"  Background="White" CornerRadius="30">
+					<TextBlock TextAlignment="Center" VerticalAlignment="Center" FontSize="30" Text="24"></TextBlock>
+				</Border>
+				<Border BorderBrush="Black" BorderThickness="3" Margin="20,80,0,0" x:Name="Bordername25" Width="40" Height="40"  Background="White" CornerRadius="30">
+					<TextBlock TextAlignment="Center" VerticalAlignment="Center" FontSize="30" Text="25"></TextBlock>
+				</Border>
+				<Border BorderBrush="Black" BorderThickness="3" Margin="20,80,0,0" x:Name="Bordername26" Width="40" Height="40"  Background="White" CornerRadius="30">
+					<TextBlock TextAlignment="Center" VerticalAlignment="Center" FontSize="30" Text="26"></TextBlock>
+				</Border>
+				<Border BorderBrush="Black" BorderThickness="3" Margin="20,80,0,0" x:Name="Bordername27" Width="40" Height="40"  Background="White" CornerRadius="30">
+					<TextBlock TextAlignment="Center" VerticalAlignment="Center" FontSize="30" Text="27"></TextBlock>
+				</Border>
+				<Border BorderBrush="Black" BorderThickness="3" Margin="20,80,0,0" x:Name="Bordername28" Width="40" Height="40"  Background="White" CornerRadius="30">
+					<TextBlock TextAlignment="Center" VerticalAlignment="Center" FontSize="30" Text="28"></TextBlock>
+				</Border>
+			</StackPanel>
+		</StackPanel>
+		<StackPanel Width="310"  Height="70" VerticalAlignment="Center" Margin="0,70,0,0"  Orientation="Horizontal"  Background="Gainsboro" Grid.Row="10" Grid.ColumnSpan="4" HorizontalAlignment="Center"  Grid.Column="0" >
+
+			<Button Background="Transparent" Click="Button_Click_1" >
+				<Button.Content>
+					<Image Source="/Assets/ikon1.PNG" Width="50"></Image>
+				</Button.Content>
+			</Button>
+			<Button Margin="10,0,0,0" Background="Transparent" Click="Button_Click">
+				<Button.Content>
+					<Image Source="/Assets/ikon2.PNG" Width="50"></Image>
+				</Button.Content>
+			</Button>
+			<Button Margin="10,0,0,0" Background="Transparent" Click="Button_Click_2">
+				<Button.Content>
+					<Image Source="/Assets/ikon3.PNG" Width="50"></Image>
+				</Button.Content>
+			</Button>
+			<Button Margin="10,0,0,0" Background="Transparent" Click="Button_Click_3">
+				<Button.Content>
+					<Image Source="/Assets/ikon4.PNG" Width="50"></Image>
+				</Button.Content>
+			</Button>
+		</StackPanel>
+		<StackPanel Grid.Row="3" Grid.ColumnSpan="2" Margin="0,30,0,0" HorizontalAlignment="Center">
+			<Button Content="Начать" FontSize="25" Click="Button_Click_4"></Button>
+		</StackPanel>
+		</Grid>
+</Window>

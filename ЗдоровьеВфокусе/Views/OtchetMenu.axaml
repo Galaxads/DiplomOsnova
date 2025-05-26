@@ -1,0 +1,102 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" MinWidth="500" MinHeight="600" Width="500" Height="700" MaxHeight="700" MaxWidth="500" WindowState="FullScreen"
+        x:Class="ЗдоровьеВфокусе.OtchetMenu"
+        Title="OtchetMenu" 
+		xmlns:lvc="using:LiveChartsCore.SkiaSharpView.Avalonia">
+	<Grid ShowGridLines="False" PointerWheelChanged="OnChartScroll">
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition></ColumnDefinition>
+			<ColumnDefinition></ColumnDefinition>
+		</Grid.ColumnDefinitions>
+		<Grid.RowDefinitions>
+			<RowDefinition Height="*"></RowDefinition>
+			<RowDefinition Height="*"></RowDefinition>
+			<RowDefinition Height="*"></RowDefinition>
+			<RowDefinition Height="*"></RowDefinition>
+			<RowDefinition Height="*"></RowDefinition>
+			<RowDefinition Height="*"></RowDefinition>
+			<RowDefinition Height="*"></RowDefinition>
+			<RowDefinition Height="*"></RowDefinition>
+			<RowDefinition Height="*"></RowDefinition>
+			<RowDefinition Height="*"></RowDefinition>
+			<RowDefinition Height="*"></RowDefinition>
+		</Grid.RowDefinitions>
+		<StackPanel  Grid.Column="0" Grid.ColumnSpan="2"  Grid.Row="1" Margin="0,30,0,0" Grid.RowSpan="4">
+			<ScrollViewer  Background="#F4F8FC" CornerRadius="20" VerticalScrollBarVisibility="Auto"  Width="490" Height="500">
+				<StackPanel>
+				<TextBlock Text="Ваши показатели"  HorizontalAlignment="Center" Margin="0,20,0,0" FontSize="30"></TextBlock>
+				<StackPanel  Grid.Column="0"  Grid.ColumnSpan="2" HorizontalAlignment="Center" Margin="50,0,0,0" Grid.Row="2">
+
+					<lvc:CartesianChart   CornerRadius="12" Background="GhostWhite" Width="400" Height="400" Margin="0,50,50,0" HorizontalAlignment="Left" x:Name="MyChart1">
+
+					</lvc:CartesianChart>
+					<StackPanel Orientation="Horizontal">
+						<Button  Background="GhostWhite"  Margin="0,40,0,0" BorderBrush="Gray" Click="Button_Click_7" >
+							<Button.Content>
+								<Grid>
+									<StackPanel VerticalAlignment="Center">
+										<TextBlock Text="Назад"></TextBlock>
+									
+									</StackPanel>
+								</Grid>
+							</Button.Content>
+						</Button>
+						<Button  Background="GhostWhite"  Margin="260,40,0,0"  BorderBrush="Gray" Click="Button_Click_8" >
+							<Button.Content>
+								<Grid>
+									<StackPanel VerticalAlignment="Center">
+										<TextBlock Text="Вперед"></TextBlock>
+
+									</StackPanel>
+								</Grid>
+							</Button.Content>
+						</Button>
+						
+					</StackPanel>
+				</StackPanel>
+					<Button Content="Изменить показатели" Background="GhostWhite"  BorderBrush="Gray" FontSize="25" HorizontalAlignment="Center" Click="Button_Click_6" Margin="0,50,0,0" ></Button>
+					<StackPanel>
+						<Border CornerRadius="20" Width="400"  Height="200" Margin="0,30,0,0"  Background="GhostWhite">
+							<StackPanel Width="350"  Height="200"   Grid.Column="1" Grid.ColumnSpan="4" Grid.RowSpan="2" Background="GhostWhite">
+								<TextBlock x:Name="IMt" HorizontalAlignment="Center" Margin="0,30,0,0" Text="Ваш ИМТ:"></TextBlock>
+								<TextBlock  HorizontalAlignment="Center" Margin="0,30,0,0" Text="10.0 - Недобор Веса"></TextBlock>
+								<TextBlock  HorizontalAlignment="Center" Margin="0,0,0,0" Text="18.5 - Норма"></TextBlock>
+								<TextBlock  HorizontalAlignment="Center" Margin="0,0,0,0" Text="25.0 - Избыток веса"></TextBlock>
+								<TextBlock  HorizontalAlignment="Center" Margin="0,0,0,0" Text="30.0 - Ожирение"></TextBlock>
+								<TextBlock  HorizontalAlignment="Center" Margin="0,0,0,0" Text="35.0 - Сильное Ожирение"></TextBlock>
+							</StackPanel>
+						</Border>
+					</StackPanel>
+					</StackPanel>
+			</ScrollViewer>
+			</StackPanel>
+		<Button Background="GhostWhite"  BorderBrush="Gray" Content="Справочная информация" Click="Button_Click_5" FontSize="19" Grid.Column="0" Grid.ColumnSpan="2" Margin="0,30,0,0" HorizontalAlignment="Center"></Button>
+		<StackPanel Width="310"  Height="70" VerticalAlignment="Center" Margin="0,0,0,20"  Orientation="Horizontal"  Background="Gainsboro" Grid.Row="10" Grid.ColumnSpan="4" HorizontalAlignment="Center"  Grid.Column="0" >
+
+			<Button Background="Transparent" Click="Button_Click_1" >
+				<Button.Content>
+					<Image Source="/Assets/ikon1.PNG" Width="50"></Image>
+				</Button.Content>
+			</Button>
+			<Button Margin="10,0,0,0" Background="Transparent" Click="Button_Click">
+				<Button.Content>
+					<Image Source="/Assets/ikon2.PNG" Width="50"></Image>
+				</Button.Content>
+			</Button>
+			<Button Margin="10,0,0,0" Background="Transparent" Click="Button_Click_2">
+				<Button.Content>
+					<Image Source="/Assets/ikon3.PNG" Width="50"></Image>
+				</Button.Content>
+			</Button>
+			<Button Margin="10,0,0,0" Background="Transparent" Click="Button_Click_3">
+				<Button.Content>
+					<Image Source="/Assets/ikon4.PNG" Width="50"></Image>
+				</Button.Content>
+			</Button>
+
+		</StackPanel>
+	</Grid>
+</Window>

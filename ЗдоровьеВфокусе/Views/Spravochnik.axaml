@@ -1,0 +1,358 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"  MinWidth="500" MinHeight="600" Width="500" Height="700" MaxHeight="700" MaxWidth="500" WindowState="FullScreen"
+        x:Class="ЗдоровьеВфокусе.Spravochnik"
+        Title="Spravochnik">
+	<Grid ShowGridLines="False">
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition></ColumnDefinition>
+			<ColumnDefinition></ColumnDefinition>
+		</Grid.ColumnDefinitions>
+		<Grid.RowDefinitions>
+			<RowDefinition Height="*"></RowDefinition>
+			<RowDefinition Height="*"></RowDefinition>
+			<RowDefinition Height="*"></RowDefinition>
+			<RowDefinition Height="*"></RowDefinition>
+			<RowDefinition Height="*"></RowDefinition>
+			<RowDefinition Height="*"></RowDefinition>
+			<RowDefinition Height="*"></RowDefinition>
+			<RowDefinition Height="*"></RowDefinition>
+			<RowDefinition Height="*"></RowDefinition>
+			<RowDefinition Height="*"></RowDefinition>
+			<RowDefinition Height="*"></RowDefinition>
+		</Grid.RowDefinitions>
+		<TextBlock Text="Справочная информация" FontSize="30" Grid.ColumnSpan="2" Margin="0,20,0,0" HorizontalAlignment="Center"></TextBlock>
+		<StackPanel Grid.Column="0" Grid.ColumnSpan="2"  Grid.Row="1" Grid.RowSpan="4">
+			<ScrollViewer  Background="GhostWhite" CornerRadius="20" VerticalScrollBarVisibility="Auto"  Width="500" Height="550">
+				<StackPanel x:Name="MainStack" Margin="10" Spacing="10">
+				
+
+					<StackPanel Margin="20" Spacing="10">
+						<TextBlock Text="Основы тренировок" FontSize="24" FontWeight="Bold" Margin="0 0 0 10"/>
+
+						<Expander Header="Разминка перед тренировкой" IsExpanded="False">
+							<TextBlock TextWrapping="Wrap" Margin="10 5 0 0">
+								Разминка подготавливает мышцы, суставы и сердечно-сосудистую систему к нагрузке.
+								Она снижает риск травм и повышает эффективность тренировки.
+								Обычно включает лёгкое кардио (5-10 минут) и динамическую растяжку.
+							</TextBlock>
+						</Expander>
+
+						<Expander Header="Выбор нагрузки и веса" IsExpanded="False">
+							<TextBlock TextWrapping="Wrap" Margin="10 5 0 0">
+								Начинай с умеренного веса, с которым можешь выполнить 10-12 повторений с правильной техникой.
+								Если последние повторы даются тяжело, но без боли — вес подобран правильно.
+								Постепенно увеличивай нагрузку по мере прогресса.
+							</TextBlock>
+						</Expander>
+
+						<Expander Header="Техника выполнения упражнений" IsExpanded="False">
+							<TextBlock TextWrapping="Wrap" Margin="10 5 0 0">
+								Правильная техника — ключ к эффективности и безопасности.
+								Работай перед зеркалом или запиши себя на видео, чтобы отследить ошибки.
+								Лучше меньше вес, но качественно, чем больше — но с риском травм.
+							</TextBlock>
+						</Expander>
+
+						<Expander Header="Типы тренировок" IsExpanded="False">
+							<TextBlock TextWrapping="Wrap" Margin="10 5 0 0">
+								• Силовые — для набора мышечной массы и силы.
+								• Кардио — для выносливости и сжигания калорий.
+								• Функциональные — для общей физподготовки.
+								Рекомендуется комбинировать разные типы в течение недели.
+							</TextBlock>
+						</Expander>
+
+						<Expander Header="Частота и продолжительность" IsExpanded="False">
+							<TextBlock TextWrapping="Wrap" Margin="10 5 0 0">
+								Для начинающих — 3 тренировки в неделю по 30–45 минут.
+								Продвинутые — 4–6 раз в неделю, 45–90 минут.
+								Важно давать телу время на восстановление между нагрузками.
+							</TextBlock>
+						</Expander>
+					</StackPanel>
+					<StackPanel Margin="20" Spacing="10">
+						<TextBlock Text="Питание" FontSize="24" FontWeight="Bold" Margin="0 0 0 10"/>
+
+						<Expander Header="Баланс белков, жиров и углеводов" IsExpanded="False">
+							<TextBlock TextWrapping="Wrap" Margin="10 5 0 0">
+								• Белки (мясо, яйца, творог, бобовые) — строительный материал для мышц.
+								• Жиры (орехи, рыба, авокадо) — важны для гормонов и нервной системы.
+								• Углеводы (овощи, фрукты, крупы) — главный источник энергии.
+								Рекомендуемое соотношение: 40% углеводов, 30% белков, 30% жиров.
+							</TextBlock>
+						</Expander>
+
+						<Expander Header="Питание до тренировки" IsExpanded="False">
+							<TextBlock TextWrapping="Wrap" Margin="10 5 0 0">
+								За 1–2 часа до тренировки съешь лёгкий приём пищи с углеводами и белками:
+								пример — овсянка с фруктами и яйцом или банан с творогом.
+								Избегай жирной и тяжёлой пищи, она замедлит переваривание.
+							</TextBlock>
+						</Expander>
+
+						<Expander Header="Питание после тренировки" IsExpanded="False">
+							<TextBlock TextWrapping="Wrap" Margin="10 5 0 0">
+								После тренировки важно восполнить запасы энергии и восстановить мышцы.
+								Через 30–60 минут съешь белки и углеводы:
+								куриная грудка с рисом, омлет с овощами, творог с мёдом — отличные варианты.
+							</TextBlock>
+						</Expander>
+
+						<Expander Header="Роль воды" IsExpanded="False">
+							<TextBlock TextWrapping="Wrap" Margin="10 5 0 0">
+								Вода участвует во всех процессах в организме, особенно при физических нагрузках.
+								Пей воду в течение дня, особенно до, во время и после тренировки.
+								Ориентир — 30–40 мл на 1 кг массы тела в день.
+							</TextBlock>
+						</Expander>
+
+						<Expander Header="Ошибки в питании" IsExpanded="False">
+							<TextBlock TextWrapping="Wrap" Margin="10 5 0 0">
+								• Пропуск приёмов пищи
+								• Избыток сахара и фастфуда
+								• Недостаток белка
+								• Слишком строгие диеты
+								Помни: питание — это топливо. Оно должно быть регулярным, разнообразным и качественным.
+							</TextBlock>
+						</Expander>
+					</StackPanel>
+					<StackPanel Margin="20" Spacing="10">
+						<TextBlock Text="Восстановление" FontSize="24" FontWeight="Bold" Margin="0 0 0 10"/>
+
+						<Expander Header="Сон и его значение" IsExpanded="False">
+							<TextBlock TextWrapping="Wrap" Margin="10 5 0 0">
+								Сон — главный фактор восстановления.
+								Во сне мышцы растут, гормоны восстанавливаются, нервная система отдыхает.
+								Рекомендуется спать 7–9 часов в сутки, особенно после интенсивных тренировок.
+							</TextBlock>
+						</Expander>
+
+						<Expander Header="Заминка после тренировки" IsExpanded="False">
+							<TextBlock TextWrapping="Wrap" Margin="10 5 0 0">
+								Заминка помогает плавно снизить пульс, убрать молочную кислоту из мышц и уменьшить риск крепатуры.
+								Это может быть лёгкая растяжка, медленная ходьба или дыхательные упражнения в течение 5–10 минут.
+							</TextBlock>
+						</Expander>
+
+						<Expander Header="Стретчинг и гибкость" IsExpanded="False">
+							<TextBlock TextWrapping="Wrap" Margin="10 5 0 0">
+								Растяжка улучшает подвижность суставов и снижает напряжение в мышцах.
+								Можно делать как после тренировки, так и в отдельные дни.
+								Уделяй внимание зонам, которые чаще всего забиваются — поясница, бедра, грудь.
+							</TextBlock>
+						</Expander>
+
+						<Expander Header="Отдых между тренировками" IsExpanded="False">
+							<TextBlock TextWrapping="Wrap" Margin="10 5 0 0">
+								Мышцы растут не во время тренировки, а после неё — когда ты отдыхаешь.
+								Между тяжёлыми тренировками на одну группу мышц должно проходить 48 часов.
+								В дни отдыха можно делать лёгкое кардио или прогулки.
+							</TextBlock>
+						</Expander>
+
+						<Expander Header="Дополнительное восстановление" IsExpanded="False">
+							<TextBlock TextWrapping="Wrap" Margin="10 5 0 0">
+								Массаж, контрастный душ, баня, компрессы и роллы — всё это может ускорить восстановление.
+								Главное — слушай своё тело: усталость — сигнал к отдыху, а не к перегрузке.
+							</TextBlock>
+						</Expander>
+					</StackPanel>
+					<StackPanel Margin="20" Spacing="10">
+						<TextBlock Text="Часто задаваемые вопросы (FAQ)" FontSize="24" FontWeight="Bold" Margin="0 0 0 10"/>
+
+						<Expander Header="Почему я не вижу результата?" IsExpanded="False">
+							<TextBlock TextWrapping="Wrap" Margin="10 5 0 0">
+								Причин может быть несколько: неправильное питание, недостаточный сон, плохая техника, маленькая нагрузка или, наоборот, перетренированность.
+								Результаты появляются не сразу — дай себе минимум 4–6 недель регулярной работы.
+							</TextBlock>
+						</Expander>
+
+						<Expander Header="Можно ли тренироваться каждый день?" IsExpanded="False">
+							<TextBlock TextWrapping="Wrap" Margin="10 5 0 0">
+								Можно, если грамотно распределять нагрузку.
+								Например, силовые — 3–4 раза в неделю, а в остальные дни — лёгкое кардио или растяжка.
+								Но если чувствуешь усталость — отдыхай. Восстановление — часть прогресса.
+							</TextBlock>
+						</Expander>
+
+						<Expander Header="Как не потерять мотивацию?" IsExpanded="False">
+							<TextBlock TextWrapping="Wrap" Margin="10 5 0 0">
+								Ставь чёткие, измеримые цели.
+								Отмечай прогресс — делай фото, записывай результаты.
+								Меняй тренировки, чтобы не заскучать. И главное — напоминай себе, зачем ты начал.
+							</TextBlock>
+						</Expander>
+
+						<Expander Header="Что важнее — питание или тренировки?" IsExpanded="False">
+							<TextBlock TextWrapping="Wrap" Margin="10 5 0 0">
+								И то, и другое важно.
+								Питание даёт телу топливо и материал, тренировки — стимул к изменениям.
+								Без сбалансированного подхода результата не будет.
+							</TextBlock>
+						</Expander>
+
+						<Expander Header="Что делать, если нет сил тренироваться?" IsExpanded="False">
+							<TextBlock TextWrapping="Wrap" Margin="10 5 0 0">
+								Проверь свой сон, питание и уровень стресса.
+								Попробуй лёгкую разминку — возможно, энергия появится в процессе.
+								Но если чувствуешь сильную усталость — выбери отдых.
+							</TextBlock>
+						</Expander>
+					</StackPanel>
+					<StackPanel Margin="20" Spacing="10">
+						<TextBlock Text="Советы для начинающих" FontSize="24" FontWeight="Bold" Margin="0 0 0 10"/>
+
+						<Expander Header="Начинай с малого" IsExpanded="False">
+							<TextBlock TextWrapping="Wrap" Margin="10 5 0 0">
+								Не пытайся сразу тренироваться как профессионал.
+								Лучше 2–3 коротких тренировки в неделю, чем резкий старт и быстрое выгорание.
+								Постепенно увеличивай нагрузку, чтобы избежать травм.
+							</TextBlock>
+						</Expander>
+
+						<Expander Header="Ставь реалистичные цели" IsExpanded="False">
+							<TextBlock TextWrapping="Wrap" Margin="10 5 0 0">
+								Не жди чудес за неделю.
+								Ставь достижимые цели — например, "тренироваться 3 раза в неделю" или "научиться отжиматься 10 раз".
+								Маленькие победы мотивируют сильнее, чем размытые мечты.
+							</TextBlock>
+						</Expander>
+
+						<Expander Header="Следи за техникой" IsExpanded="False">
+							<TextBlock TextWrapping="Wrap" Margin="10 5 0 0">
+								Тренируйся не быстро, а правильно.
+								Лучше выполнить 8 повторений с хорошей техникой, чем 15 — с риском для здоровья.
+								Ошибки в технике могут привести к хроническим травмам.
+							</TextBlock>
+						</Expander>
+
+						<Expander Header="Фиксируй прогресс" IsExpanded="False">
+							<TextBlock TextWrapping="Wrap" Margin="10 5 0 0">
+								Веди дневник тренировок, делай фото, измеряй объёмы тела.
+								Прогресс может быть незаметен в зеркале, но очевиден в цифрах.
+								Это поможет не потерять мотивацию.
+							</TextBlock>
+						</Expander>
+
+						<Expander Header="Не сравнивай себя с другими" IsExpanded="False">
+							<TextBlock TextWrapping="Wrap" Margin="10 5 0 0">
+								У каждого свой путь, генетика и обстоятельства.
+								Сравнивай себя только с собой вчерашним.
+								Прогресс — это шаг вперёд, каким бы маленьким он ни был.
+							</TextBlock>
+						</Expander>
+					</StackPanel>
+					<StackPanel Margin="20" Spacing="10">
+						<TextBlock Text="Глоссарий (Словарь терминов)" FontSize="24" FontWeight="Bold" Margin="0 0 0 10"/>
+
+						<Expander Header="Реп (повторение)" IsExpanded="False">
+							<TextBlock TextWrapping="Wrap" Margin="10 5 0 0">
+								Одно полное выполнение упражнения — например, одно приседание или одно отжимание.
+							</TextBlock>
+						</Expander>
+
+						<Expander Header="Подход (сет)" IsExpanded="False">
+							<TextBlock TextWrapping="Wrap" Margin="10 5 0 0">
+								Группа повторений подряд — например, 12 приседаний подряд = 1 подход.
+							</TextBlock>
+						</Expander>
+
+						<Expander Header="Фулбоди" IsExpanded="False">
+							<TextBlock TextWrapping="Wrap" Margin="10 5 0 0">
+								Тип тренировки, в которой задействуются все основные группы мышц за одно занятие.
+							</TextBlock>
+						</Expander>
+
+						<Expander Header="HIIT" IsExpanded="False">
+							<TextBlock TextWrapping="Wrap" Margin="10 5 0 0">
+								Высокоинтенсивные интервальные тренировки — чередование коротких взрывных нагрузок и отдыха.
+							</TextBlock>
+						</Expander>
+
+						<Expander Header="Сухая масса" IsExpanded="False">
+							<TextBlock TextWrapping="Wrap" Margin="10 5 0 0">
+								Вес тела без жировой ткани — мышцы, кости, органы и вода. Важный показатель для оценки прогресса.
+							</TextBlock>
+						</Expander>
+
+						<Expander Header="Крепатура" IsExpanded="False">
+							<TextBlock TextWrapping="Wrap" Margin="10 5 0 0">
+								Мышечная боль после непривычной или интенсивной тренировки. Обычно проходит за 1–3 дня.
+							</TextBlock>
+						</Expander>
+					</StackPanel>
+					<StackPanel Margin="20" Spacing="10">
+						<TextBlock Text="Частые ошибки" FontSize="24" FontWeight="Bold" Margin="0 0 0 10"/>
+
+						<Expander Header="Пропуск разминки и заминки" IsExpanded="False">
+							<TextBlock TextWrapping="Wrap" Margin="10 5 0 0">
+								Без разминки мышцы не готовы к нагрузке — выше риск травм.
+								Без заминки замедляется восстановление.
+								Потрать по 5–10 минут до и после тренировки — это важно.
+							</TextBlock>
+						</Expander>
+
+						<Expander Header="Неправильная техника упражнений" IsExpanded="False">
+							<TextBlock TextWrapping="Wrap" Margin="10 5 0 0">
+								Работа с плохой техникой может привести к травмам и отсутствию результата.
+								Лучше меньше повторений, но с контролем и правильной формой.
+							</TextBlock>
+						</Expander>
+
+						<Expander Header="Игнорирование боли" IsExpanded="False">
+							<TextBlock TextWrapping="Wrap" Margin="10 5 0 0">
+								Боль — сигнал организма.
+								Терпеть и "добивать до конца" — опасно.
+								Отличай жжение от травмы. При боли — прекрати тренировку и отдохни.
+							</TextBlock>
+						</Expander>
+
+						<Expander Header="Отсутствие режима питания и сна" IsExpanded="False">
+							<TextBlock TextWrapping="Wrap" Margin="10 5 0 0">
+								Мышцы растут не в зале, а вне его — при достаточном отдыхе и питании.
+								Без белка и сна даже лучшая программа не даст результата.
+							</TextBlock>
+						</Expander>
+
+						<Expander Header="Зависимость от веса на весах" IsExpanded="False">
+							<TextBlock TextWrapping="Wrap" Margin="10 5 0 0">
+								Вес тела может колебаться от воды, еды и цикла.
+								Лучше отслеживать объёмы, фото и силу — они дают реальное представление о прогрессе.
+							</TextBlock>
+						</Expander>
+					</StackPanel>
+
+
+				</StackPanel>
+			</ScrollViewer>
+		</StackPanel>
+		<StackPanel Width="310"  Height="70" VerticalAlignment="Center" Margin="0,0,0,20"  Orientation="Horizontal"  Background="Gainsboro" Grid.Row="10" Grid.ColumnSpan="4" HorizontalAlignment="Center"  Grid.Column="0" >
+
+			<Button Background="Transparent" Click="Button_Click_1" >
+				<Button.Content>
+					<Image Source="/Assets/ikon1.PNG" Width="50"></Image>
+				</Button.Content>
+			</Button>
+			<Button Margin="10,0,0,0" Background="Transparent" Click="Button_Click">
+				<Button.Content>
+					<Image Source="/Assets/ikon2.PNG" Width="50"></Image>
+				</Button.Content>
+			</Button>
+			<Button Margin="10,0,0,0" Background="Transparent" Click="Button_Click_2">
+				<Button.Content>
+					<Image Source="/Assets/ikon3.PNG" Width="50"></Image>
+				</Button.Content>
+			</Button>
+			<Button Margin="10,0,0,0" Background="Transparent" Click="Button_Click_3">
+				<Button.Content>
+					<Image Source="/Assets/ikon4.PNG" Width="50"></Image>
+				</Button.Content>
+			</Button>
+
+		</StackPanel>
+
+	</Grid>
+</Window>

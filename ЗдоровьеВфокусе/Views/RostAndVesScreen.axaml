@@ -1,0 +1,46 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" MinWidth="500" MinHeight="600" Width="500" Height="700" WindowState="FullScreen" MaxWidth="500" MaxHeight="600"
+        x:Class="ЗдоровьеВфокусе.RostAndVesScreen"
+        Title="RostAndVesScreen">
+	<Grid ShowGridLines="False">
+		<Grid.ColumnDefinitions >
+			<ColumnDefinition Width="*"></ColumnDefinition>
+			<ColumnDefinition Width="*"></ColumnDefinition>
+		</Grid.ColumnDefinitions>
+		<Grid.RowDefinitions>
+			<RowDefinition Height="*"></RowDefinition>
+			<RowDefinition Height="*"></RowDefinition>
+			<RowDefinition Height="*"></RowDefinition>
+			<RowDefinition Height="*"></RowDefinition>
+			<RowDefinition Height="*"></RowDefinition>
+		</Grid.RowDefinitions>
+		<Image Source="avares://ЗдоровьеВфокусе/Assets/bacground.PNG" Grid.ColumnSpan="4" Grid.RowSpan="5"
+             Stretch="UniformToFill"/>
+		
+		<StackPanel Grid.Column="0" Grid.Row="0"  VerticalAlignment="Bottom" HorizontalAlignment="Center" Grid.ColumnSpan="2">
+			<TextBlock Text="А теперь выберите ваш рост и вес! " FontSize="22" Foreground="White"></TextBlock>
+		</StackPanel>
+		<StackPanel Grid.Row="1" Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Bottom" Spacing="10">
+			<TextBlock Name="SelectedHeightText" Foreground="White" Text="Выбранный рост: 170 см" HorizontalAlignment="Center"/>
+			<Slider Name="HeightSlider" Minimum="150" Maximum="210" Value="170"
+					TickFrequency="1" TickPlacement="BottomRight"
+					Width="300" IsSnapToTickEnabled="True"  
+					PropertyChanged="Slider_PropertyChanged"/>
+		</StackPanel>
+		<StackPanel Grid.Row="2" Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center" Spacing="10">
+			<TextBlock Name="SelectedHeightText1" Foreground="White" Text="Выбранный вес: 100 кг" HorizontalAlignment="Center"/>
+			<Slider Name="HeightSlider1" Minimum="40" Maximum="180" Value="100"
+					TickFrequency="1"  TickPlacement="BottomRight"
+					Width="300" IsSnapToTickEnabled="True"
+					PropertyChanged="Slider_PropertyChanged_1"/>
+		</StackPanel>
+		<StackPanel  Grid.Row="3" Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center">
+			<Button Background="White"   Content="Сохранить" Click="Button_Click">
+				
+			</Button>
+		</StackPanel>
+	</Grid>
+</Window>

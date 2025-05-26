@@ -1,0 +1,316 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" MinWidth="500" MinHeight="600" Width="500" Height="700" WindowState="FullScreen" MaxHeight="700" MaxWidth="500"
+        x:Class="ЗдоровьеВфокусе.Glavnoemenu" x:CompileBindings="False"
+        Title="Glavnoemenu">
+	<Grid ShowGridLines="False">
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition></ColumnDefinition>
+			<ColumnDefinition></ColumnDefinition>
+		</Grid.ColumnDefinitions>
+		<Grid.RowDefinitions>
+			<RowDefinition Height="*"></RowDefinition>
+			<RowDefinition Height="*"></RowDefinition>
+			<RowDefinition Height="*"></RowDefinition>
+			<RowDefinition Height="*"></RowDefinition>
+			<RowDefinition Height="*"></RowDefinition>
+			<RowDefinition Height="*"></RowDefinition>
+			<RowDefinition Height="*"></RowDefinition>
+			<RowDefinition Height="*"></RowDefinition>
+			<RowDefinition Height="*"></RowDefinition>
+			<RowDefinition Height="*"></RowDefinition>
+			<RowDefinition Height="*"></RowDefinition>
+		</Grid.RowDefinitions>
+		<TextBlock Text="ЗдоровьеВфокусе" FontSize="30" Grid.ColumnSpan="2" Margin="0,20,0,0" HorizontalAlignment="Center"></TextBlock>
+		<StackPanel Grid.Column="0" Grid.ColumnSpan="2"  Grid.Row="1" Grid.RowSpan="4">
+			<ScrollViewer  Background="GhostWhite" CornerRadius="20" VerticalScrollBarVisibility="Auto"  Width="500" Height="550">
+				<StackPanel x:Name="MainStack" Margin="10" Spacing="10">
+					<TextBlock Text="Ваш личный тренировчный план на 30 дней" HorizontalAlignment="Center" Margin="0,20,0,0" FontSize="20"></TextBlock>
+
+					<!-- Карточка 1 -->
+					<StackPanel>
+						<Button Width="165" Height="210" Background="White" HorizontalAlignment="Center" BorderBrush="Gray" Click="Button_Click_4" >
+							<Button.Content>			
+									<Image Width="200" Height="200" Source="avares://ЗдоровьеВфокусе/Assets/glavnoeimage.jpg" />
+							</Button.Content>
+						</Button>
+					</StackPanel>
+					<TextBlock Text="Упражнения на руки разной зложности"  HorizontalAlignment="Center" Margin="0,20,0,0" FontSize="20"></TextBlock>
+					<!-- Карточка 2 -->
+					<StackPanel>
+						<Button Click="Button_Click_5" Width="320" Height="150" Background="White" HorizontalAlignment="Center" Margin="0,30,0,0" BorderBrush="Gray" >
+							<Button.Content>
+								<Grid>
+									<Image Width="180" Height="140" Source="avares://ЗдоровьеВфокусе/Assets/hands1.jpg" HorizontalAlignment="Right"/>
+									<StackPanel VerticalAlignment="Center">
+										<TextBlock Text="Легкие упражнения "/>
+										<TextBlock Text="Упражнений 10" x:Name="Ruki1"/>
+									</StackPanel>
+								</Grid>
+							</Button.Content>
+						</Button>
+					</StackPanel>
+					<StackPanel>
+						<Button Click="Button_Click_6" Width="320" Height="150" Background="White" HorizontalAlignment="Center" Margin="0,30,0,0" BorderBrush="Gray" >
+							<Button.Content>
+								<Grid>
+									<Image Width="180" Height="140" Source="avares://ЗдоровьеВфокусе/Assets/hands2.jpg" HorizontalAlignment="Right"/>
+									<StackPanel VerticalAlignment="Center">
+										<TextBlock Text="Средние упражнения "/>
+										<TextBlock Text="Упражнений 10" x:Name="Ruki2"/>
+									</StackPanel>
+								</Grid>
+							</Button.Content>
+						</Button>
+					</StackPanel>
+					<StackPanel>
+						<Button Click="Button_Click_7" Width="320" Height="150" Background="White" HorizontalAlignment="Center" Margin="0,30,0,0" BorderBrush="Gray" >
+							<Button.Content>
+								<Grid>
+									<Image Width="180" Height="140" Source="avares://ЗдоровьеВфокусе/Assets/hands3.jpg" HorizontalAlignment="Right"/>
+									<StackPanel VerticalAlignment="Center">
+										<TextBlock Text="Сложные упражнения "/>
+										<TextBlock Text="Упражнений 10" x:Name="Ruki3"/>
+									</StackPanel>
+								</Grid>
+							</Button.Content>
+						</Button>
+					</StackPanel>
+					<TextBlock Text="Упражнения на грудь разной зложности"  HorizontalAlignment="Center" Margin="0,20,0,0" FontSize="20"></TextBlock>
+					<!-- Карточка 2 -->
+					<StackPanel>
+						<Button Click="Button_Click_8" Width="320" Height="150" Background="White" HorizontalAlignment="Center" Margin="0,30,0,0" BorderBrush="Gray" >
+							<Button.Content>
+								<Grid>
+									<Image Width="180" Height="140" Source="avares://ЗдоровьеВфокусе/Assets/grudi1.jpg " HorizontalAlignment="Right"/>
+									<StackPanel VerticalAlignment="Center">
+										<TextBlock Text="Легкие упражнения "/>
+										<TextBlock Text="Упражнений 10" x:Name="grudi1"/>
+									</StackPanel>
+								</Grid>
+							</Button.Content>
+						</Button>
+					</StackPanel>
+					<StackPanel>
+						<Button Click="Button_Click_9" Width="320" Height="150" Background="White" HorizontalAlignment="Center" Margin="0,30,0,0" BorderBrush="Gray" >
+							<Button.Content>
+								<Grid>
+									<Image Width="180" Height="140" Source="avares://ЗдоровьеВфокусе/Assets/grudi2.jpg " HorizontalAlignment="Right"/>
+									<StackPanel VerticalAlignment="Center">
+										<TextBlock Text="Средние упражнения "/>
+										<TextBlock Text="Упражнений 10" x:Name="grudi2"/>
+									</StackPanel>
+								</Grid>
+							</Button.Content>
+						</Button>
+					</StackPanel>
+					<StackPanel>
+						<Button Click="Button_Click_10" Width="320" Height="150" Background="White" HorizontalAlignment="Center" Margin="0,30,0,0" BorderBrush="Gray" >
+							<Button.Content>
+								<Grid>
+									<Image Width="180" Height="140" Source="avares://ЗдоровьеВфокусе/Assets/grudi3.jpg " HorizontalAlignment="Right"/>
+									<StackPanel VerticalAlignment="Center">
+										<TextBlock Text="Сложные упражнения "/>
+										<TextBlock Text="Упражнений 10" x:Name="grudi3"/>
+									</StackPanel>
+								</Grid>
+							</Button.Content>
+						</Button>
+					</StackPanel>
+					<TextBlock Text="Упражнения на пресс разной зложности"  HorizontalAlignment="Center" Margin="0,20,0,0" FontSize="20"></TextBlock>
+					<!-- Карточка 3 -->
+					<StackPanel>
+						<Button Click="Button_Click_11" Width="320" Height="150" Background="White" HorizontalAlignment="Center" Margin="0,30,0,0" BorderBrush="Gray" >
+							<Button.Content>
+								<Grid>
+									<Image Width="180" Height="140" Source="avares://ЗдоровьеВфокусе/Assets/press1.jpg " HorizontalAlignment="Right"/>
+									<StackPanel VerticalAlignment="Center">
+										<TextBlock Text="Легкие упражнения "/>
+										<TextBlock Text="Упражнений 10" x:Name="press1"/>
+									</StackPanel>
+								</Grid>
+							</Button.Content>
+						</Button>
+					</StackPanel>
+					<StackPanel>
+						<Button Click="Button_Click_12" Width="320" Height="150" Background="White" HorizontalAlignment="Center" Margin="0,30,0,0" BorderBrush="Gray" >
+							<Button.Content>
+								<Grid>
+									<Image Width="180" Height="140" Source="avares://ЗдоровьеВфокусе/Assets/press2.jpg " HorizontalAlignment="Right"/>
+									<StackPanel VerticalAlignment="Center">
+										<TextBlock Text="Средние упражнения "/>
+										<TextBlock Text="Упражнений 10" x:Name="press2"/>
+									</StackPanel>
+								</Grid>
+							</Button.Content>
+						</Button>
+					</StackPanel>
+					<StackPanel>
+						<Button Click="Button_Click_13" Width="320" Height="150" Background="White" HorizontalAlignment="Center" Margin="0,30,0,0" BorderBrush="Gray" >
+							<Button.Content>
+								<Grid>
+									<Image Width="180" Height="140" Source="avares://ЗдоровьеВфокусе/Assets/press3.jpg " HorizontalAlignment="Right"/>
+									<StackPanel VerticalAlignment="Center">
+										<TextBlock Text="Сложные упражнения "/>
+										<TextBlock Text="Упражнений 10" x:Name="ress3"/>
+									</StackPanel>
+								</Grid>
+							</Button.Content>
+						</Button>
+					</StackPanel>
+					<TextBlock Text="Упражнения на ноги разной зложности"  HorizontalAlignment="Center" Margin="0,20,0,0" FontSize="20"></TextBlock>
+					<!-- Карточка 4 -->
+					<StackPanel>
+						<Button Click="Button_Click_14" Width="320" Height="150" Background="White" HorizontalAlignment="Center" Margin="0,30,0,0" BorderBrush="Gray" >
+							<Button.Content>
+								<Grid>
+									<Image Width="180" Height="140" Source="avares://ЗдоровьеВфокусе/Assets/nogi1.jpg " HorizontalAlignment="Right"/>
+									<StackPanel VerticalAlignment="Center">
+										<TextBlock Text="Легкие упражнения "/>
+										<TextBlock Text="Упражнений 10" x:Name="nogi1"/>
+									</StackPanel>
+								</Grid>
+							</Button.Content>
+						</Button>
+					</StackPanel>
+					<StackPanel>
+						<Button Click="Button_Click_15" Width="320" Height="150" Background="White" HorizontalAlignment="Center" Margin="0,30,0,0" BorderBrush="Gray" >
+							<Button.Content>
+								<Grid>
+									<Image Width="180" Height="140" Source="avares://ЗдоровьеВфокусе/Assets/nogi2.jpg " HorizontalAlignment="Right"/>
+									<StackPanel VerticalAlignment="Center">
+										<TextBlock Text="Средние упражнения "/>
+										<TextBlock Text="Упражнений 10" x:Name="nogi2"/>
+									</StackPanel>
+								</Grid>
+							</Button.Content>
+						</Button>
+					</StackPanel>
+					<StackPanel>
+						<Button Click="Button_Click_16" Width="320" Height="150" Background="White" HorizontalAlignment="Center" Margin="0,30,0,0" BorderBrush="Gray" >
+							<Button.Content>
+								<Grid>
+									<Image Width="180" Height="140" Source="avares://ЗдоровьеВфокусе/Assets/nogi3.jpg " HorizontalAlignment="Right"/>
+									<StackPanel VerticalAlignment="Center">
+										<TextBlock Text="Сложные упражнения "/>
+										<TextBlock Text="Упражнений 10" x:Name="nogi3"/>
+									</StackPanel>
+								</Grid>
+							</Button.Content>
+						</Button>
+					</StackPanel>
+					<TextBlock Text="Упражнения на все тело разной зложности"  HorizontalAlignment="Center" Margin="0,20,0,0" FontSize="20"></TextBlock>
+					<!-- Карточка 5 -->
+					<StackPanel>
+						<Button Click="Button_Click_17" Width="320" Height="150" Background="White" HorizontalAlignment="Center" Margin="0,30,0,0" BorderBrush="Gray" >
+							<Button.Content>
+								<Grid>
+									<Image Width="180" Height="140" Source="avares://ЗдоровьеВфокусе/Assets/vsetelo1.jpg " HorizontalAlignment="Right"/>
+									<StackPanel VerticalAlignment="Center">
+										<TextBlock Text="Легкие упражнения "/>
+										<TextBlock Text="Упражнений 10" x:Name="vsetelo1"/>
+									</StackPanel>
+								</Grid>
+							</Button.Content>
+						</Button>
+					</StackPanel>
+					<StackPanel>
+						<Button Click="Button_Click_18" Width="320" Height="150" Background="White" HorizontalAlignment="Center" Margin="0,30,0,0" BorderBrush="Gray" >
+							<Button.Content>
+								<Grid>
+									<Image Width="180" Height="140" Source="avares://ЗдоровьеВфокусе/Assets/vsetelo2.jpg " HorizontalAlignment="Right"/>
+									<StackPanel VerticalAlignment="Center">
+										<TextBlock Text="Средние упражнения "/>
+										<TextBlock Text="Упражнений 10" x:Name="vsetelo2"/>
+									</StackPanel>
+								</Grid>
+							</Button.Content>
+						</Button>
+					</StackPanel>
+					<StackPanel>
+						<Button Click="Button_Click_19" Width="320" Height="150" Background="White" HorizontalAlignment="Center" Margin="0,30,0,0" BorderBrush="Gray" >
+							<Button.Content>
+								<Grid>
+									<Image Width="180" Height="140" Source="avares://ЗдоровьеВфокусе/Assets/vsetelo3.jpg " HorizontalAlignment="Right"/>
+									<StackPanel VerticalAlignment="Center">
+										<TextBlock Text="Сложные упражнения "/>
+										<TextBlock Text="Упражнений 10" x:Name="vsetelo3"/>
+									</StackPanel>
+								</Grid>
+							</Button.Content>
+						</Button>
+					</StackPanel>
+					<TextBlock Text="Упражнения на снижение веса "  HorizontalAlignment="Center" Margin="0,20,0,0" FontSize="20"></TextBlock>
+					<!-- Карточка 6 -->
+					<StackPanel>
+						<Button Click="Button_Click_20" Width="320" Height="150" Background="White" HorizontalAlignment="Center" Margin="0,30,0,0" BorderBrush="Gray" >
+							<Button.Content>
+								<Grid>
+									<Image Width="180" Height="140" Source="avares://ЗдоровьеВфокусе/Assets/pohud1.jpg " HorizontalAlignment="Right"/>
+									<StackPanel VerticalAlignment="Center">
+										<TextBlock Text="Легкие упражнения "/>
+										<TextBlock Text="Упражнений 10" x:Name="pohud1"/>
+									</StackPanel>
+								</Grid>
+							</Button.Content>
+						</Button>
+					</StackPanel>
+					<StackPanel>
+						<Button Click="Button_Click_21" Width="320" Height="150" Background="White" HorizontalAlignment="Center" Margin="0,30,0,0" BorderBrush="Gray" >
+							<Button.Content>
+								<Grid>
+									<Image Width="180" Height="140" Source="avares://ЗдоровьеВфокусе/Assets/pohud2.jpg " HorizontalAlignment="Right"/>
+									<StackPanel VerticalAlignment="Center">
+										<TextBlock Text="Средние упражнения "/>
+										<TextBlock Text="Упражнений 10" x:Name="pohud2"/>
+									</StackPanel>
+								</Grid>
+							</Button.Content>
+						</Button>
+					</StackPanel>
+					<StackPanel>
+						<Button Click="Button_Click_22" Width="320" Height="150" Background="White" HorizontalAlignment="Center" Margin="0,30,0,0" BorderBrush="Gray" >
+							<Button.Content>
+								<Grid>
+									<Image Width="180" Height="140" Source="avares://ЗдоровьеВфокусе/Assets/pohud3.jpg " HorizontalAlignment="Right"/>
+									<StackPanel VerticalAlignment="Center">
+										<TextBlock Text="Сложные упражнения "/>
+										<TextBlock Text="Упражнений 10" x:Name="pohud3"/>
+									</StackPanel>
+								</Grid>
+							</Button.Content>
+						</Button>
+					</StackPanel>
+
+				</StackPanel>
+			</ScrollViewer>
+		</StackPanel>
+		<StackPanel Width="310"  Height="70" VerticalAlignment="Center" Margin="0,0,0,20"  Orientation="Horizontal"  Background="Gainsboro" Grid.Row="10" Grid.ColumnSpan="4" HorizontalAlignment="Center"  Grid.Column="0" >
+
+			<Button Background="Transparent" Click="Button_Click_1" >
+				<Button.Content>
+					<Image Source="/Assets/ikon1.PNG" Width="50"></Image>
+				</Button.Content>
+			</Button>
+			<Button Margin="10,0,0,0" Background="Transparent" Click="Button_Click">
+				<Button.Content>
+					<Image Source="/Assets/ikon2.PNG" Width="50"></Image>
+				</Button.Content>
+			</Button>
+			<Button Margin="10,0,0,0" Background="Transparent" Click="Button_Click_2">
+				<Button.Content>
+					<Image Source="/Assets/ikon3.PNG" Width="50"></Image>
+				</Button.Content>
+			</Button>
+			<Button Margin="10,0,0,0" Background="Transparent" Click="Button_Click_3">
+				<Button.Content>
+					<Image Source="/Assets/ikon4.PNG" Width="50"></Image>
+				</Button.Content>
+			</Button>
+
+		</StackPanel>
+
+	</Grid>
+</Window>

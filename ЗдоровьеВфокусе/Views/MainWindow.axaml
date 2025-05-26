@@ -1,0 +1,37 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:vm="using:ЗдоровьеВфокусе.ViewModels"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:views="clr-namespace:ЗдоровьеВфокусе.Views"
+        mc:Ignorable="d"  MinWidth="500" MinHeight="600" Width="500" Height="700" WindowState="FullScreen"  MaxWidth="500" MaxHeight="600"
+        x:Class="ЗдоровьеВфокусе.Views.MainWindow"
+        Icon="/Assets/avalonia-logo.ico"
+        Title="ЗдоровьеВфокусе">
+	<Grid ShowGridLines="False">
+		<Grid.ColumnDefinitions >
+			<ColumnDefinition Width="*"></ColumnDefinition>
+			<ColumnDefinition Width="*"></ColumnDefinition>
+			<ColumnDefinition Width="*"></ColumnDefinition>
+		</Grid.ColumnDefinitions>
+		<Grid.RowDefinitions>
+			<RowDefinition Height="*"></RowDefinition>
+			<RowDefinition Height="*"></RowDefinition>
+			<RowDefinition Height="*"></RowDefinition>
+			<RowDefinition Height="*"></RowDefinition>
+			<RowDefinition Height="*"></RowDefinition>
+		</Grid.RowDefinitions>
+		<Image Source="avares://ЗдоровьеВфокусе/Assets/bacground.PNG" Grid.ColumnSpan="3" Grid.RowSpan="5"
+             Stretch="UniformToFill"/>
+		<StackPanel Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="3" HorizontalAlignment="Center" VerticalAlignment="Bottom">
+			<TextBlock FontSize="22" Foreground="White" Text="Добро пожаловать в ЗдоровьеВфокусе!"></TextBlock>
+		</StackPanel>
+		<StackPanel Grid.Column="1" Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Bottom">
+			<Button Content="Старт" Background="White" FontSize="22" Click="Button_Click"></Button>
+		</StackPanel>
+		<Border>
+			
+		</Border>
+	</Grid>
+		
+</Window>

@@ -1,0 +1,46 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"  MinWidth="500" MinHeight="600" Width="500" Height="700" WindowState="FullScreen"  MaxWidth="500" MaxHeight="600"
+        x:Class="ЗдоровьеВфокусе.DateScreen"
+        Title="DateScreen">
+
+	<Grid ShowGridLines="False">
+		<Grid.ColumnDefinitions >
+			<ColumnDefinition Width="*"></ColumnDefinition>
+			<ColumnDefinition Width="*"></ColumnDefinition>
+		</Grid.ColumnDefinitions>
+		<Grid.RowDefinitions>
+			<RowDefinition Height="*"></RowDefinition>
+			<RowDefinition Height="*"></RowDefinition>
+			<RowDefinition Height="*"></RowDefinition>
+			<RowDefinition Height="*"></RowDefinition>
+			<RowDefinition Height="*"></RowDefinition>
+		</Grid.RowDefinitions>
+		<Image Source="avares://ЗдоровьеВфокусе/Assets/bacground.PNG" Grid.ColumnSpan="4" Grid.RowSpan="5"
+             Stretch="UniformToFill"/>
+		<StackPanel Grid.Column="0"  HorizontalAlignment="Center" Grid.ColumnSpan="1" Grid.Row="2" >
+			<Button BorderThickness="0" BorderBrush="Transparent" Click="Button_Click" >
+			
+				<Button.Content>
+					<StackPanel >
+						<Image Width="150"  Source="/Assets/man.PNG"></Image>
+					</StackPanel>
+				</Button.Content>
+			</Button>
+		</StackPanel>
+		<StackPanel Grid.Column="1" HorizontalAlignment="Center" Grid.ColumnSpan="1" Grid.Row="2" >
+			<Button Click="Button_Click_1"  >
+				<Button.Content>
+					<StackPanel>
+						<Image Width="165" Source="/Assets/women.PNG"></Image>
+					</StackPanel>
+				</Button.Content>
+			</Button>
+		</StackPanel>
+		<StackPanel Grid.Column="0" Grid.Row="1"  VerticalAlignment="Center" HorizontalAlignment="Center" Grid.ColumnSpan="2">
+			<TextBlock Text="Выберите ваш пол!"  FontSize="22" Foreground="White"></TextBlock>
+		</StackPanel>
+		</Grid>
+</Window>

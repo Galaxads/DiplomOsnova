@@ -1,0 +1,67 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+		xmlns:anim="https://github.com/whistyun/AnimatedImage.Avalonia"
+        mc:Ignorable="d" MinWidth="500" MinHeight="600" Width="500" Height="700" WindowState="FullScreen" MaxWidth="500" MaxHeight="700"
+        x:Class="ЗдоровьеВфокусе.UserUpr"
+        Title="UserUpr">
+	<Grid ShowGridLines="False">
+		<Grid.ColumnDefinitions >
+			<ColumnDefinition Width="*"></ColumnDefinition>
+			<ColumnDefinition Width="*"></ColumnDefinition>
+			<ColumnDefinition Width="*"></ColumnDefinition>
+			<ColumnDefinition Width="*"></ColumnDefinition>
+		</Grid.ColumnDefinitions>
+		<Grid.RowDefinitions>
+			<RowDefinition Height="*"></RowDefinition>
+			<RowDefinition Height="*"></RowDefinition>
+			<RowDefinition Height="*"></RowDefinition>
+			<RowDefinition Height="*"></RowDefinition>
+			<RowDefinition Height="*"></RowDefinition>
+		</Grid.RowDefinitions>
+		<StackPanel Grid.ColumnSpan="4" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center">
+			<TextBlock Text="Упражнения на руки и плечи" x:Name="Titultext" FontSize="20" ></TextBlock>
+		</StackPanel>
+		<StackPanel Grid.Column="0" Grid.ColumnSpan="4" Grid.Row="1" Width="300" Height="250"  Grid.RowSpan="2"  Background="Transparent">
+			<Image x:Name="GifAnim"  anim:ImageBehavior.AnimatedSource="{Binding MyText}" Width="240" />
+		</StackPanel>
+		<StackPanel Background="Gainsboro" Margin="0,0,0,100" VerticalAlignment="Bottom" Grid.Column="0" Grid.ColumnSpan="4" Grid.Row="3"  Width="350" Height="200"  Grid.RowSpan="2" >
+			<TextBlock  x:Name="Opis" TextWrapping="WrapWithOverflow" ></TextBlock>
+		</StackPanel>
+		<StackPanel Grid.Row="0" Grid.RowSpan="2" VerticalAlignment="Center" Margin="0,0,0,50" HorizontalAlignment="Center" Grid.Column="1" Grid.ColumnSpan="2">
+			<TextBlock x:Name="ColvoPovtor" Text="кОЛВО ПОВТОР"></TextBlock>
+		</StackPanel>
+		<StackPanel Width="310"  Height="70" VerticalAlignment="Center" Margin="0,35,0,0"  Orientation="Horizontal"  Background="Gainsboro" Grid.Row="4" Grid.ColumnSpan="4" HorizontalAlignment="Center"  Grid.Column="0" >
+			<Button Background="Transparent" Click="Button_Click_6" >
+				<Button.Content>
+					<Image Source="/Assets/ikon1.PNG" Width="50"></Image>
+				</Button.Content>
+			</Button>
+			<Button Margin="10,0,0,0" Background="Transparent" Click="Button_Click_7">
+				<Button.Content>
+					<Image Source="/Assets/ikon2.PNG" Width="50"></Image>
+				</Button.Content>
+			</Button>
+			<Button Margin="10,0,0,0" Background="Transparent" Click="Button_Click_8">
+				<Button.Content>
+					<Image Source="/Assets/ikon3.PNG" Width="50"></Image>
+				</Button.Content>
+			</Button>
+			<Button Margin="10,0,0,0" Background="Transparent" Click="Button_Click_9">
+				<Button.Content>
+					<Image Source="/Assets/ikon4.PNG" Width="50"></Image>
+				</Button.Content>
+			</Button>
+
+		</StackPanel>
+		
+		<StackPanel Grid.Column="4" Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Center">
+			<Button x:Name="Right" Content="→" Click="Button_Click_11"></Button>
+		</StackPanel>
+		<StackPanel>
+			<Button Content="Звук" Click="Button_Click_12">
+			</Button>
+		</StackPanel>
+	</Grid>
+</Window>
